@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]>
+  <html class="no-js ie" lang="nl">
+<![endif]-->
+<!--[if gt IE 8]><!-->  
+  <html class="no-js" lang="nl">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8" /> 
+  <title>KNMI - Weer - Verwachtingen</title>
+  <meta name="description" content="">
+  <meta name="author" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="//cdn.knmi.nl/assets/favicon-4d5f63d89d8b68b88aa5a240f3a90419.ico" />
+  <link rel="apple-touch-icon" href="//cdn.knmi.nl/assets/apple-touch-icon-6fb8f0555eaec9e9e1e31af7f84b9b89.png" />
+  <link rel="stylesheet" media="all" href="//cdn.knmi.nl/assets/application-0ea00170d308de46c5995eac04b87303.css" data-turbolinks-track="true" />
+  <script src="//cdn.knmi.nl/assets/modernizr/modernizr.min-79c1ead3f66f97501d69ce081967d3e4.js" data-turbolinks-track="true"></script>
+  <!-- Enable media query support on older browsers -->
+  <!--[if lt IE 9]> 
+    <script src="//cdn.knmi.nl/assets/respond/respond-a986dd4953370df305ce3c65cfb088d4.js" data-turbolinks-track="true"></script>
+  <![endif]-->
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="31okW94Itwm7yzq7ChTdD63d46HtwVd53mxp+5r8UJA5Jxg8pl15JMwgnX6Dy3U0nMZeiy6haWAQQD65SC2mtg==" />
+
+</head>
+<body data-no-turbolink="true" class=" high-contrast">
+<!-- FIXME enable turbolinks and fix behaviour -->
+
+<a tabindex="0" id="skiplink" href="#mainBody">translation missing: nl.to_main_content</a>
+
+<!--[if lt IE 9]>
+<div class="browsehappy">
+	Je gebruikt een verouderde browser. Voor een betere gebruikerservaring kun je jouw browser upgraden.
+</div>
+<![endif]-->
+
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-60727058-1', 'auto');
+	  ga('set', 'forceSSL', true); // Toelichting CBP: Gebruik altijd https voor Google Analytics
+	  ga('set', 'anonymizeIp', true); // Toelichting CBP: Zet de IP-maskering aan
+ 	  ga('send', 'pageview');
+
+	</script>
+
+
+<header class="site-header">
+  <div class="wrapper relative">
+    <div class="site-header__logowrp">
+      <a href="/home">
+        <img src="data:image/gif;base64,R0lGODlhEAAJAPAAAP///wAAACH/C1hNUCBEYXRhWE1QAz94cAAh+QQFAAAAACwAAAAAEAAJAAACCoSPqcvtD6OclBUAOw==" class="b-lazy site-header__logo" data-src="//cdn.knmi.nl/assets/logo_large-877e5d8acaf3b3728d1951a1119ac002.png" data-src-xs="//cdn.knmi.nl/assets/logo_small-b6c2b34fa90d4559ccde790b9e5d701e.png" alt="Logo Koninklijk Nederlands Meteorologisch Instituut | Ministerie van Infrastructuur en Milieu" />
+        <noscript>
+          <img class="site-header__logo" width="230" height="79" alt="Logo KNMI" src="//cdn.knmi.nl/assets/logo_large-877e5d8acaf3b3728d1951a1119ac002.png" />
+        </noscript>
+      </a>
+    </div>
+    <div class="site-header__meta">
+      <a href="/over-het-knmi/about">English</a>
+      <a data-active="normaal contrast" data-inactive="hoog contrast" class="highcontrast-toggle hidden" href="#"></a>
+    </div>
+  </div>
+  <div class="wrapper--navbar">
+    <div class="main-navbar is-loading">
+        <nav>
+          <ul>
+              <li>
+                <a class="" href="/home">
+                  Home
+                  
+                </a>
+              </li>
+              <li>
+                <a class="is-active" href="/nederland-nu/weer">
+                  Nederland nu
+                  <span class="nav-toggle icon-arrow-small-down"></span>
+                </a>
+                  <ul>
+                      <li><a class="is-active" href="/nederland-nu/weer">Weer</a></li>
+                      <li><a class="" href="/nederland-nu/seismologie">Seismologie</a></li>
+                      <li><a class="" href="/nederland-nu/maritiem">Maritiem</a></li>
+                      <li><a class="" href="/nederland-nu/luchtvaart">Luchtvaart</a></li>
+                      <li><a class="" href="/nederland-nu/klimatologie">Klimatologie</a></li>
+                      <li><a class="" href="/nederland-nu/caribisch-nederland">Caribisch Nederland</a></li>
+                  </ul>
+              </li>
+              <li>
+                <a class="" href="/producten-en-diensten">
+                  Producten &amp; diensten
+                  
+                </a>
+              </li>
+              <li>
+                <a class="" href="/kennis-en-datacentrum">
+                  Kennis- &amp; datacentrum
+                  
+                </a>
+              </li>
+              <li>
+                <a class="" href="/over-het-knmi/over">
+                  Over het KNMI
+                  <span class="nav-toggle icon-arrow-small-down"></span>
+                </a>
+                  <ul>
+                      <li><a class="" href="/over-het-knmi/over">Over het KNMI</a></li>
+                      <li><a class="" href="/over-het-knmi/directieraad">Directieraad</a></li>
+                      <li><a class="" href="/over-het-knmi/raad_van_toezicht">Raad van Toezicht</a></li>
+                      <li><a class="" href="/over-het-knmi/kerntaken">Kerntaken</a></li>
+                      <li><a class="" href="/over-het-knmi/KNMI-werkt-internationaal">Internationaal</a></li>
+                      <li><a class="" href="/over-het-knmi/vacatures">Werken bij</a></li>
+                      <li><a class="" href="/over-het-knmi/nieuws">Nieuws</a></li>
+                      <li><a class="" href="/over-het-knmi/agenda">Agenda</a></li>
+                      <li><a class="" href="/over-het-knmi/contact">Contact</a></li>
+                  </ul>
+              </li>
+          </ul>
+        </nav>
+      <form class="main-navbar__search" autocomplete="off" method="GET" action="/zoeken">
+        <fieldset>
+          <legend class="hidden">Zoek binnen de site</legend>
+          <div class="main-navbar__search-context">
+            <input id="context_search" type="radio" name="context" value="/zoeken" />
+            <label for="context_search"><span>binnen de hele site</span></label>
+            <input id="context_data_center" type="radio" name="context" value="/kennis-en-datacentrum/zoekresultaten" />
+            <label for="context_data_center"><span>binnen het kennis- &amp; datacentrum</span></label>
+          </div>
+          <label class="hidden" for="q">Trefwoord</label>
+          <input type="text" id="q" name="q" placeholder="Zoeken" />
+          <button class="icon-search" type="submit"><span>Zoek</span></button>
+        </fieldset>
+      </form>
+      <a class="icon-menu main-navbar__toggle" href="#">Menu</a>
+    </div>
+    <div class="main-navbar__sub is-loading"></div>
+  </div>
+</header>
+
+<div class="nav-overlay">
+  <a href="#" class="main-navbar__close icon-close">Sluiten</a>
+  <div class="nav-overlay__inner"></div>
+</div>
+
+
+<main id="mainBody" tabindex="0">
+  
+<div class="wrapper js_breadcrumb ">
+  <div class="weather-small">
+  <a href="/nederland-nu/weer/waarschuwingen" class="weather-small__alert weather-small--green">
+      Code groen
+  </a>
+</div>
+    <ul class="breadcrumb">
+        <li><a class="" href="/">Home</a></li>
+        <li><a class="" href="/nederland-nu/weer">Nederland nu</a></li>
+        <li><a class="" href="/nederland-nu/weer/verwachtingen">Weer</a></li>
+      	<li>Verwachtingen</li>
+  </ul>
+
+</div>
+
+<div id="weather" class="wrapper">
+  <div class="columns filled-main-content">
+    <div class="col-sm-12 col-md-10 col-md-offset-1">
+      <div class="title-with-links is-oneline is-large">
+  <h1 class="title-with-links__title margin-bottom-0">Verwachtingen</h1>
+  <ul class="title-with-links__list is-inline">
+	    	<li><a href="/nederland-nu/weer/waarschuwingen">Bekijk waarschuwingen</a></li>
+	    	<li><a href="/nederland-nu/weer/waarnemingen">Bekijk waarnemingen</a></li>
+  </ul>
+</div>
+      <div class="filled-main-content__highlight media">
+  <div class="media__img weather__image weather__image--forecast">
+        <figure class="is-active">
+          <a class="figure__link" href="//cdn.knmi.nl/knmi/map/current/weather/forecast/kaart_verwachtingen_Morgen_nacht.gif?3da3dcc78d48a0dfe7a19ab8a01b0cfd">
+            <img src="//cdn.knmi.nl/knmi/map/current/weather/forecast/kaart_verwachtingen_Morgen_nacht.gif?3da3dcc78d48a0dfe7a19ab8a01b0cfd" alt="Kaart verwachtingen morgen nacht" />
+          </a>
+          <figcaption>Nacht maandag - dinsdag</figcaption>
+        </figure>
+        <figure >
+          <a class="figure__link" href="//cdn.knmi.nl/knmi/map/current/weather/forecast/kaart_verwachtingen_Morgen_dag.gif?3da3dcc78d48a0dfe7a19ab8a01b0cfd">
+            <img src="//cdn.knmi.nl/knmi/map/current/weather/forecast/kaart_verwachtingen_Morgen_dag.gif?3da3dcc78d48a0dfe7a19ab8a01b0cfd" alt="Kaart verwachtingen morgen dag" />
+          </a>
+          <figcaption>Dinsdag overdag</figcaption>
+        </figure>
+    <div class="weather__image-toggle"></div>
+  </div>
+  <div class="weather__text media__body" data-show-text="Lees het hele weerbericht" data-close-text="Toon minder van het weerbericht">
+    <h2>Vandaag &amp; morgen</h2>
+      <p class="intro margin-bottom-0">Summary</p>
+    <p>Description</p><p>DescriptionExtended</p><p></p>
+      <div class="meta">20/02/2017 21.37 uur LT</div>
+  </div>
+</div>
+    </div>
+    
+  </div>
+  <div class="columns filled-main-content">
+    <div class="col-sm-12 col-md-3 col-md-offset-1">
+  <h2 class="margin-0">Vooruitzichten</h2>
+</div>
+  <div class="col-sm-12 col-md-7">
+    <p class="margin-top-0">Veel bewolking en vooral de eerste dagen regen en met name op donderdag ook veel wind. De maximumtemperatuur ligt aanvankelijk rond 10°C, maar daalt richting het weekeinde.</p>
+    <div class="meta">20/02/2017 04.32 uur LT</div>
+</div>
+  </div>
+    <div class="columns filled-main-content">
+      <div class="col-sm-12 col-md-10 col-md-offset-1">
+        <div class="text-center color-blue">
+          <span class="margin-bottom-20 icon-shake swipehint hide-on-lg hide-on-xl">Scroll onderstaande tabel om meer te zien</span>
+        </div>
+        <div class="filled-main-content__highlight">
+            <div class="weather-map__table-wrp">
+    <ul class="weather-map__table is-fullwidth">
+        <li>
+          <strong class="weather-map__table-cell">
+            Di
+          </strong>
+          <span class="weather-map__table-cell margin-bottom-10 color-grey">21-02-2017</span>
+          <span class="weather-map__table-cell">
+          <img src="//cdn.knmi.nl/assets/forecast/1-druppel-regen-dag-83628e4bf11a18bf11981abcea2b2e82.svg" alt="" />
+          </span>
+          <span class="weather-map__table-cell">
+            <span class="weather-map__label">Max.</span>
+              10&deg;
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Min.</span>
+              6&deg;
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Neerslag</span>
+              1/2mm
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Neerslagkans</span>
+            50%
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Zonneschijn</span>
+            40%
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Windkracht</span>
+            <span class="weather-map__meta icon-wind-direction-W">
+            W 4</span>
+          </span>
+        </li>
+        <li>
+          <strong class="weather-map__table-cell">
+            Wo
+          </strong>
+          <span class="weather-map__table-cell margin-bottom-10 color-grey">22-02-2017</span>
+          <span class="weather-map__table-cell">
+          <img src="//cdn.knmi.nl/assets/forecast/2-druppels-regen-f721268bdd0b96bf04baa700fddc047b.svg" alt="" />
+          </span>
+          <span class="weather-map__table-cell">
+            <span class="weather-map__label">Max.</span>
+              10&deg;
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Min.</span>
+              7&deg;
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Neerslag</span>
+              8mm
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Neerslagkans</span>
+            90%
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Zonneschijn</span>
+            10%
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Windkracht</span>
+            <span class="weather-map__meta icon-wind-direction-W">
+            W 6</span>
+          </span>
+        </li>
+        <li>
+          <strong class="weather-map__table-cell">
+            Do
+          </strong>
+          <span class="weather-map__table-cell margin-bottom-10 color-grey">23-02-2017</span>
+          <span class="weather-map__table-cell">
+          <img src="//cdn.knmi.nl/assets/forecast/2-druppels-regen-f721268bdd0b96bf04baa700fddc047b.svg" alt="" />
+          </span>
+          <span class="weather-map__table-cell">
+            <span class="weather-map__label">Max.</span>
+              9/10&deg;
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Min.</span>
+              6/8&deg;
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Neerslag</span>
+              5/10mm
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Neerslagkans</span>
+            90%
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Zonneschijn</span>
+            10%
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Windkracht</span>
+            <span class="weather-map__meta icon-wind-direction-ZW">
+            ZW 5</span>
+          </span>
+        </li>
+        <li>
+          <strong class="weather-map__table-cell">
+            Vr
+          </strong>
+          <span class="weather-map__table-cell margin-bottom-10 color-grey">24-02-2017</span>
+          <span class="weather-map__table-cell">
+          <img src="//cdn.knmi.nl/assets/forecast/2-druppels-regen-f721268bdd0b96bf04baa700fddc047b.svg" alt="" />
+          </span>
+          <span class="weather-map__table-cell">
+            <span class="weather-map__label">Max.</span>
+              6/7&deg;
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Min.</span>
+              2/3&deg;
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Neerslag</span>
+              2/4mm
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Neerslagkans</span>
+            80%
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Zonneschijn</span>
+            30%
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Windkracht</span>
+            <span class="weather-map__meta icon-wind-direction-NW">
+            NW 4</span>
+          </span>
+        </li>
+        <li>
+          <strong class="weather-map__table-cell">
+            Za
+          </strong>
+          <span class="weather-map__table-cell margin-bottom-10 color-grey">25-02-2017</span>
+          <span class="weather-map__table-cell">
+          <img src="//cdn.knmi.nl/assets/forecast/2-druppels-regen-f721268bdd0b96bf04baa700fddc047b.svg" alt="" />
+          </span>
+          <span class="weather-map__table-cell">
+            <span class="weather-map__label">Max.</span>
+              7/9&deg;
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Min.</span>
+              -1/0&deg;
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Neerslag</span>
+              2/6mm
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Neerslagkans</span>
+            70%
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Zonneschijn</span>
+            30%
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Windkracht</span>
+            <span class="weather-map__meta icon-wind-direction-ZW">
+            ZW 4</span>
+          </span>
+        </li>
+        <li>
+          <strong class="weather-map__table-cell">
+            Zo
+          </strong>
+          <span class="weather-map__table-cell margin-bottom-10 color-grey">26-02-2017</span>
+          <span class="weather-map__table-cell">
+          <img src="//cdn.knmi.nl/assets/forecast/1-druppel-regen-dag-83628e4bf11a18bf11981abcea2b2e82.svg" alt="" />
+          </span>
+          <span class="weather-map__table-cell">
+            <span class="weather-map__label">Max.</span>
+              9/11&deg;
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Min.</span>
+              3/6&deg;
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Neerslag</span>
+              0/3mm
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Neerslagkans</span>
+            50%
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Zonneschijn</span>
+            30%
+          </span>
+          <span class="weather-map__table-cell margin-top-10">
+            <span class="weather-map__label">Windkracht</span>
+            <span class="weather-map__meta icon-wind-direction-ZW">
+            ZW 4</span>
+          </span>
+        </li>
+      </ul>
+      <div class="margin-top-20 meta">20/02/2017 21.37 uur LT</div>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  <div class="columns filled-main-content padding-bottom-0">
+    <div class="col-sm-12 col-md-3 col-md-offset-1">
+  <h2 class="margin-0">Vooruitzichten lange termijn</h2>
+</div>
+<div class="col-sm-12 col-md-7">
+    <p class="margin-top-0">
+			<strong class="block">maandag 27 februari tot en met maandag 06 maart</strong>
+    	Er is een vrijwel gelijke kans (50/50) op een overgang naar meest droog weer, dan wel op het aanhouden van het heersende licht wisselvallige weertype. De dagtemperatuur ligt waarschijnlijk iets boven de normale waarde, terwijl er &#39;s nachts een slechts kleine kans op lichte vorst is.
+    </p>
+    <span class="meta">20/02/2017 04.32 uur LT</span>
+</div>
+
+  </div>
+  <div class="columns filled-main-content">
+    <div class="col-sm-12 col-md-3 col-md-offset-1">
+      <div class="share ">
+	<span class="share__title">Delen via</span>
+	<ul class="share__list">
+		<li><a href="https://www.facebook.com/sharer/sharer.php?u=http://knmi.nl/nederland-nu/weer/verwachtingen" class="share__button facebook icon-facebook">Facebook</a></li>
+		<li><a href="https://twitter.com/home?status=http://knmi.nl/nederland-nu/weer/verwachtingen" class="share__button twitter icon-twitter">Twitter</a></li>
+		<li><a href="whatsapp://send" class="wa_btn wa_btn_s" data-text="Kijk eens naar deze pagina:" data-href="" style="display:none">WhatsApp</a></li>
+	</ul>
+</div>
+<!-- http://whatsapp-sharing.com/ -->
+
+<script type="text/javascript">if(typeof wabtn4fg==="undefined"){wabtn4fg=1;h=document.head||document.getElementsByTagName("head")[0],s=document.createElement("script");s.type="text/javascript";s.src="/knmi/js/whatsapp-sharing/whatsapp-button.js";h.appendChild(s);}</script>
+    </div>
+  </div>
+</div>
+
+  <div class="wrapper">
+    <div class="morelinks columns">
+      <div class="col-sm-12 col-md-10 col-md-offset-1">
+        <h2 class="morelinks__title">Meer verwachtingen</h2>
+        <ul>
+          <li><a class="btn " href="/nederland-nu/weer/waarschuwingen-en-verwachtingen/weerkaarten" >Weerkaarten</a></li>
+          <li><a class="btn " href="/nederland-nu/weer/waarschuwingen-en-verwachtingen/ensemble" >Verwachtingen in detail</a></li>
+          <li><a class="btn " href="/nederland-nu/weer/waarschuwingen-en-verwachtingen/weer-en-klimaatpluim" >Weer- en klimaatpluim</a></li>
+          <li><a class="btn " href="/nederland-nu/weer/verwachtingen/seizoensverwachting" >Seizoensverwachting</a></li>
+          <li><a class="btn " href="/nederland-nu/weer/waarschuwingen-en-verwachtingen/zonkracht" >Zonkrachtverwachting</a></li>
+          <li><a class="btn " href="/nederland-nu/weer/waarschuwingen-en-verwachtingen/normalentabel" >Normale waarden temperatuur</a></li>
+          <li><a class="btn " href="/kennis-en-datacentrum/achtergrond/de-weersverwachting" >Uitleg over weersverwachtingen</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<div class="wrapper banner-visual-wrp">
+  <a class="banner-visual" href="/nederland-nu/weer/waarschuwingen">
+	<div class="banner-visual__img">
+		<div class="banner-visual__img-inner b-lazy" data-src="//cdn.knmi.nl/assets/weather-warnings-bdc555c0e95c7937176b57f7857e284b.jpg"></div>
+	</div>
+	<span class="h2 icon-arrow-right-after">Bekijk waarschuwingen</span>
+</a>
+
+  <a class="banner-visual" href="/nederland-nu/weer/waarnemingen">
+	<div class="banner-visual__img">
+		<div class="banner-visual__img-inner b-lazy" data-src="//cdn.knmi.nl/assets/weather-observations-7f5ac03185f6b4d0235e9baea6833cbb.jpg"></div>
+	</div>
+	<span class="h2 icon-arrow-right-after">Bekijk waarnemingen</span>
+</a>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <ul>
+    <li><a href="/copyright">Copyright</a></li>
+    <li><a href="/privacy">Privacy</a></li>
+
+    <li><a href="/cookies">Cookies</a></li>
+    <li><a href="/toegankelijkheid">Toegankelijkheid</a></li>
+  </ul>
+</footer>
+
+<!-- <div id="commentary" class="commentary">
+  <div class="commentary__inner">
+    <a class="commentary__close" href="#">✕</a>
+    <h4 class="commentary__heading">Hoe tevreden bent u met deze pagina?</h4>
+    <div class="commentary__content">
+      <div class="commentary__stars js_starRating star-rating">
+       <span class="star-rating__star">★</span>
+       <span class="star-rating__star">★</span>
+       <span class="star-rating__star">★</span>
+       <span class="star-rating__star">★</span>
+       <span class="star-rating__star">★</span>
+      </div>
+      <form action="/remarks" class="commentary__form rating-form" method="post">
+        <p class="commentary__hidden">
+          <input type="text" name="name">
+          <input type="radio" name="rating" value="0">
+          <input type="radio" name="rating" value="1">
+          <input type="radio" name="rating" value="2">
+          <input type="radio" name="rating" value="3">
+          <input type="radio" name="rating" value="4">
+        </p>
+        <p><textarea name="comment" placeholder="Wat wilt u met ons delen?" data-required="true"></textarea></p>
+        <p><input type="submit" value="Verstuur" class="commentary__submit commentary__button"></p>
+      </form>
+    </div>
+    <div class="commentary__success">
+      <h3>Bedankt!</h3>
+      <p>Uw feedback is met succes verstuurd.</p>
+    </div>
+  </div>
+</div>
+
+<a id="commentary_button" class="commentary__button-side" href="#">Feedback?</a>
+<div class="commentary__overlay"></div> -->
+
+<div class="loading-modal"></div>
+
+<script src="//cdn.knmi.nl/assets/application-8fa42806bc4c211f3426f9dbd059a760.js" data-turbolinks-track="true"></script>
+
+
+
+</body>
+</html>
+<script id="f5_cspm">(function(){var f5_cspm={f5_p:'ECDPOGAPDDJBKKGEPHGKMCFEFHIHBNOOLCINMLLNKCABOEJDBBGNDENKEJEAPGILMOAEKAIBEMGHCMLMAMGJINECCIPPBKNMADJNPEKNHDAFHJCLMEKPIIKABMGBCOPE',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,32,(latency>>8));str=f5_cspm.set_byte(str,33,(latency&0xff));str=f5_cspm.set_byte(str,27,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr1631023582aaaaaaaaaaaaaaaa='+encodeURIComponent(cookie_val)+';path=/';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
+{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;';setTimeout(f5_cspm.wait_perf_data,100);}}}}
+f5_cspm.go();}());</script>

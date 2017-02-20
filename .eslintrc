@@ -1,0 +1,13 @@
+{
+  "env" : {
+    "node" : true,
+    "es6" : true,
+  },
+  "root" : true,
+  "extends": [
+    "airbnb",
+  ],
+  "rules": {
+    "no-trailing-spaces" : 0
+  }
+}  

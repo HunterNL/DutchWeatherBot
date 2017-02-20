@@ -1,0 +1,4 @@
+node_modules
+mochawesome-reports
+.env
+*.DS_Store
