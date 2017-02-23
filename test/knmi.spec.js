@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const { fetchWeather, retrieveWeatherDataFromXML } = require('../lib/knmi_scraper');
+const { retrieveWeatherDataFromXML } = require('../lib/knmi_scraper');
 const fs = require('fs');
 
 const testXML = fs.readFileSync('./test/testdata.html');
